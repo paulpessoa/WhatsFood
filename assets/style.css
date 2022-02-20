@@ -32,6 +32,11 @@ body {
 
 .produto-sessao {
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px auto;
+    width: 90vw;
 }
 
 /* Caixa Produto */
