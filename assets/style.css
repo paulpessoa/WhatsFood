@@ -11,6 +11,10 @@
     list-style: none;
 }
 
+body {
+    background-color: #f2f2f2;
+}
+
 /* Caixa Topo*/
 .caixa-topo {
     margin: 10px auto;
@@ -24,8 +28,24 @@
 }
 
 
-/* */
+/* Sessão Produto*/
 
+.produto-sessao {
+    padding: 10px;
+}
 
+/* Caixa Produto */
 
-/* */
+.produto-caixa {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 1px 2px 5px gray;
+}
+
+.produto-caixa:hover {
+    box-shadow: 1px 3px 6px gray;
+    cursor: pointer;
+}
+
