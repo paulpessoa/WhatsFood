@@ -60,13 +60,13 @@ h2 {
 /* Caixa Produto */
 
 #temaki, #acai, #combo, #pizza {
-    border: thick solid blue;
+    border: thick solid white;
 }
 
 .produto-caixa {
     margin: 8px;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #fff;
     box-shadow: 1px 2px 5px rgb(184, 184, 184);
     width: 200px;
