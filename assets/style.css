@@ -17,6 +17,12 @@ body {
     background-size: cover;
     background-blend-mode: color;
     background-color: #e4e3e3ef;
+}
+
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 10px auto;
 
 }
 
@@ -28,7 +34,6 @@ h2 {
 /* Caixa Topo*/
 .caixa-topo {
     margin: 30px auto;
-    width: 70%;
     background-color: red;
     padding: 20px;
     text-align: center;
@@ -48,13 +53,11 @@ h2 {
 /* Sessão Produto*/
 
 .produto-sessao {
-    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     margin: 0px auto;
-    width: 90vw;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 /* Caixa Produto */
@@ -64,7 +67,6 @@ h2 {
 }
 
 .produto-caixa {
-    margin: 8px;
     padding: 20px;
     border-radius: 8px;
     background-color: #fff;
