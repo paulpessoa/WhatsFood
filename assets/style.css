@@ -27,14 +27,14 @@ h2 {
 
 /* Caixa Topo*/
 .caixa-topo {
-    margin: 10px auto;
+    margin: 30px auto;
     width: 70%;
     background-color: red;
     padding: 20px;
     text-align: center;
     color: white;
     border-radius: 10px;
-    font-family: 'Roboto', sans-serif;
+    box-shadow: 1px 2px 5px rgb(184, 184, 184);
 }
 
 .caixa-topo h1 {
@@ -61,16 +61,59 @@ h2 {
 
 .produto-caixa {
     margin: 8px;
-    padding: 8px;
+    padding: 20px;
     border-radius: 5px;
     background-color: #fff;
-    box-shadow: 1px 2px 5px gray;
+    box-shadow: 1px 2px 5px rgb(184, 184, 184);
     width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     text-align: center;
 }
 
 .produto-caixa:hover {
-    box-shadow: 1px 3px 6px gray;
-    cursor: pointer;
+    box-shadow: 1px 2px 10px gray;
 }
 
+
+.produto-caixa-imagem {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.produto-caixa-imagem:hover {
+    transform: scale(1.03);
+    transition: 0.05s;
+}
+
+.produto-caixa-detalhe {
+    font-size: 14px;
+    text-align: left;
+    color: #919191;
+}
+
+.produto-caixa-valor {
+    font-weight: 500;
+    margin: 10px;
+}
+
+
+
+
+.botao-comprar {
+    background-color: red;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    transition: 0.03s;
+}
+
+.botao-comprar:hover {
+    background-color: red;
+    transform: scale(1.03);
+    transition: 0.05s;
+    cursor: pointer;
+}
