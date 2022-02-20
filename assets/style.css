@@ -12,21 +12,38 @@
 }
 
 body {
-    background-color: #f2f2f2;
+    background-image: url("./img/backfoods.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color;
+    background-color: #e4e3e3ef;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
 }
 
 /* Caixa Topo*/
 .caixa-topo {
     margin: 10px auto;
-    width: 50%;
+    width: 70%;
     background-color: red;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     color: white;
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
 }
 
+.caixa-topo h1 {
+    font-size: 26px;
+}
+
+.caixa-topo h2 {
+    font-size: 16px;
+}
 
 /* Sessão Produto*/
 
@@ -34,19 +51,22 @@ body {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0px auto;
     width: 90vw;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* Caixa Produto */
 
 .produto-caixa {
-    margin: 10px;
-    padding: 10px;
+    margin: 8px;
+    padding: 8px;
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 1px 2px 5px gray;
+    width: 200px;
+    text-align: center;
 }
 
 .produto-caixa:hover {
