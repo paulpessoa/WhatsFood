@@ -19,13 +19,6 @@ body {
     background-color: #e4e3e3ef;
 }
 
-.container {
-    max-width: 1080px;
-    width: 100%;
-    margin: 10px auto;
-
-}
-
 h2 {
     text-align: center;
     font-size: 18px;
@@ -42,6 +35,9 @@ h2 {
     box-shadow: 1px 2px 5px rgb(184, 184, 184);
 }
 
+.titulo-produtos {
+    margin: 20px auto;
+}
 .caixa-topo h1 {
     font-size: 26px;
 }
@@ -55,7 +51,7 @@ h2 {
 .produto-sessao {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px auto;
+    margin: auto;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -67,7 +63,7 @@ h2 {
 }
 
 .produto-caixa {
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 1px 2px 5px rgb(184, 184, 184);
@@ -75,7 +71,7 @@ h2 {
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
 }
 
@@ -123,3 +119,44 @@ h2 {
     transition: 0.05s;
     cursor: pointer;
 }
+
+
+
+@media screen and (min-width: 1080px) {
+    .container {
+        max-width: 1080px;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-device-width: 601px) and (max-device-width: 1080px) { 
+    .container {
+        max-width: 1080px;
+        width: 90%;
+        margin: auto;
+    }
+    .produto-sessao {
+        justify-content: space-evenly;
+     }
+     .produto-caixa {
+        margin: 20px;
+     }   
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 600px;
+        width: 90%;
+        margin: auto;
+    }
+    .produto-sessao {
+        justify-content: space-around;
+     }   
+     .produto-caixa {
+        margin: 10px;
+     }   
+}
+
+
+
