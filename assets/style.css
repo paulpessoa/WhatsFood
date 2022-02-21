@@ -59,7 +59,7 @@ h2 {
 /* Caixa Produto */
 
 #temaki, #acai, #combo, #pizza {
-    border: thick solid white;
+    border: 2px solid #fff;
 }
 
 .produto-caixa {
@@ -92,7 +92,7 @@ h2 {
 
 .produto-caixa-detalhe {
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     color: #919191;
 }
 
@@ -102,7 +102,10 @@ h2 {
 }
 
 
-
+.area-pedido {
+    margin: 30px auto;
+    text-align: right;
+}
 
 .botao-comprar {
     background-color: red;
@@ -112,9 +115,23 @@ h2 {
     color: #fff;
     transition: 0.03s;
 }
-
 .botao-comprar:hover {
-    background-color: red;
+    background-color: #dd0202;
+    transform: scale(1.03);
+    transition: 0.05s;
+    cursor: pointer;
+}
+
+.botao-pedido {
+    background-color: green;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    transition: 0.03s;
+}
+.botao-pedido:hover {
+    background-color: rgb(0, 155, 0);
     transform: scale(1.03);
     transition: 0.05s;
     cursor: pointer;
@@ -158,5 +175,11 @@ h2 {
      }   
 }
 
-
-
+.info-autor {
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

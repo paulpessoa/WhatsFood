@@ -1,5 +1,5 @@
 console.log("conectado");
-var prato = "Escolha um Prato";
+var prato = "";
 function selecionaTemaki() {
 /*  document.getElementById('temaki').style.borderColor = '#00c943'; adiciona borda verde*/
     prato = document.getElementById('titulo-temaki').textContent; 
@@ -10,7 +10,7 @@ function selecionaTemaki() {
     botao.setAttribute("onclick","removerSelecionado();");/*troca a função*/
 };
 function removerSelecionado() {
-    prato = "Escolha um produto..."; 
+    prato = ""; 
     document.getElementById('temaki').style.borderColor = 'white';
     document.getElementById('compra-temaki').style.backgroundColor = "red";
     document.getElementById('compra-temaki').textContent = "Escolher";
@@ -54,10 +54,15 @@ function selecionaPizza() {
 
 
 function realizarPedido() {
-    if (prato === "Escolha um Prato") {
+    var boraZap = confirm("Você será redirecionado para o nosso WhatsApp. Tudo bem?");
+    let mensagem;
+    mensagem = "Boa noite, gostaria de pedir um " + prato + ".";
+ 
+    if (prato === "") {
         alert("Escolha um produto...");
     }
-    else {
-        alert(prato);
-    }
+    else if (boraZap == true) {
+        boraZap
+        window.open("https://wa.me/5581995097377?text=" + mensagem);
+    }    
 }
