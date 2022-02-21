@@ -44,26 +44,12 @@ function selecionaPizza() {
   document.getElementById("combo").style.borderColor = "white";
 }
 
-var boraZap;
-
 function realizarPedido() {
   let mensagem;
   mensagem = "Boa noite, gostaria de pedir um " + prato + ".";
-
   if (prato === "") {
     alert("Escolha um produto...");
   } else {
-    boraZap = confirm(
-      "Você será redirecionado para o nosso WhatsApp. Tudo bem?"
-    );
-    vaiNoZap();
-  }
-}
-
-function vaiNoZap() {
-  if (boraZap == true) {
     window.open("https://wa.me/5581995097377?text=" + mensagem);
-  } else {
-    console.log("não aceitou whatsapp");
   }
 }
